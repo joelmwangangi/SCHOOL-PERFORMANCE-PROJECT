@@ -77,7 +77,7 @@ if 'registered_users' not in st.session_state:
 # ── Load model ────────────────────────────────────────────────────────────────
 @st.cache_resource
 def load_model():
-    base = os.path.dirname(os.path.abspath(C:\Users\JOEL\Downloads\student perfomance\models))
+    base = os.path.dirname(os.path.abspath(rC:\Users\JOEL\Downloads\student perfomance\models))
     ann_model = joblib.load(os.path.join(base, 'models', 'ann_model.pkl'))
     scaler    = joblib.load(os.path.join(base, 'models', 'scaler.pkl'))
     le_map    = joblib.load(os.path.join(base, 'models', 'label_encoders.pkl'))
