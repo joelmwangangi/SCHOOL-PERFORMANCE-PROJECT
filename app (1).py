@@ -77,7 +77,7 @@ if 'registered_users' not in st.session_state:
 # ── Load model ────────────────────────────────────────────────────────────────
 @st.cache_resource
 def load_model():
-    base = os.path.dirname(os.path.abspath(r"C:\Users\JOEL\Downloads\student perfomance"))  # folder where app.py lives
+    base = os.path.dirname(os.path.abspath(__file__))  # folder where app.py lives
     
     ann_model = joblib.load(os.path.join(base, 'models', 'ann_model.pkl'))
     scaler    = joblib.load(os.path.join(base, 'models', 'scaler.pkl'))
