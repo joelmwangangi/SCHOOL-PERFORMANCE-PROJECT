@@ -16,7 +16,7 @@ from datetime import datetime
 
 # ── Page config ───────────────────────────────────────────────────────────────
 st.set_page_config(
-    page_title="Student Performance AI",
+    page_title="Student Performance Predictor",
     page_icon="🎓",
     layout="wide",
     initial_sidebar_state="expanded"
