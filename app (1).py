@@ -77,12 +77,15 @@ if 'registered_users' not in st.session_state:
 # ── Load model ────────────────────────────────────────────────────────────────
 @st.cache_resource
 def load_model():
-    base = os.path.dirname(os.path.abspath(r"C:\Users\JOEL\Downloads\student perfomance\models"))
+    base = r"C:\Users\JOEL\Downloads\student perfomance"
+    
     ann_model = joblib.load(os.path.join(base, 'models', 'ann_model.pkl'))
     scaler    = joblib.load(os.path.join(base, 'models', 'scaler.pkl'))
     le_map    = joblib.load(os.path.join(base, 'models', 'label_encoders.pkl'))
+    
     with open(os.path.join(base, 'models', 'model_meta.json')) as f:
         meta = json.load(f)
+    
     return ann_model, scaler, le_map, meta
 
 # ── Always define ALL globals so no page ever gets a NameError ────────────────
