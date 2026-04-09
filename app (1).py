@@ -137,7 +137,7 @@ your-repo/
 def show_login():
     st.markdown("""
     <div class="main-header">
-      <h1>🎓 Student Performance AI</h1>
+      <h1>🎓 Student Performance Predictor</h1>
       <p>ANN-powered early-warning system for academic success</p>
     </div>""", unsafe_allow_html=True)
 
