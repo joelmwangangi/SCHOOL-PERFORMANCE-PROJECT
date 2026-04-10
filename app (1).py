@@ -16,7 +16,7 @@ from datetime import datetime
 
 # ── Page config ───────────────────────────────────────────────────────────────
 st.set_page_config(
-    page_title="Student Performance AI",
+    page_title="Student Performance Predictor",
     page_icon="🎓",
     layout="wide",
     initial_sidebar_state="expanded"
@@ -245,7 +245,7 @@ your-repo/
 def show_login():
     st.markdown("""
     <div class="main-header">
-      <h1>🎓 Student Performance AI</h1>
+      <h1>🎓 Student Performance Predictor</h1>
       <p>ANN-powered early-warning system for academic success</p>
     </div>""", unsafe_allow_html=True)
 
@@ -342,7 +342,7 @@ def predict_student(data_dict):
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 def show_sidebar():
     with st.sidebar:
-        st.markdown("### 🎓 Student Performance AI")
+        st.markdown("### 🎓 Student Performance Predictor")
         uname = st.session_state.username
         st.markdown(f"**User:** {st.session_state.registered_users[uname]['name']}")
         st.markdown(f"**Role:** `{st.session_state.user_role.capitalize()}`")
@@ -566,7 +566,7 @@ def student_input_form(key_prefix=""):
 def page_dashboard():
     st.markdown("""
     <div class="main-header">
-      <h1>🎓 Student Performance AI</h1>
+      <h1>🎓 Student Performance Predictor</h1>
       <p>Artificial Neural Network · Early Warning System · Academic Success Prediction</p>
     </div>""", unsafe_allow_html=True)
 
